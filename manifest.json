@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "liftaven",
+  "display_name": "Liftaven",
+  "version": "1.1.1",
+  "description": "MCP connector for Liftaven SEO research, connected search reports and reviewed website proposals.",
+  "long_description": "Liftaven helps founders, small teams and website owners turn search data into a practical next step. Start with a public website check, add Search Console and Analytics for context, and keep research, conversations and content drafts together. When an improvement is ready, review it in the workspace before applying it through a connected editor. Connect your SEO workspace to existing search and analytics tools. Start with connection_status, inspect the current catalogue and compare search opportunities using scoped reports. Website proposals retain the product review flow. Tool availability depends on connected providers and account permissions. Inspect the live catalogue instead of assuming every provider is connected. Supported sitemap submissions are actions and should happen only when requested. Website proposals retain human review; recommendations do not guarantee rankings or traffic.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://liftaven.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liftaven/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}
